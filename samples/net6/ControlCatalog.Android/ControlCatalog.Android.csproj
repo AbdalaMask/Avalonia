@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-android</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <SingleProject>true</SingleProject>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <AndroidResource Include="..\..\..\build\Assets\Icon.png" Link="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\Android\Net6\Android\Avalonia.Android\Avalonia.Android.csproj" />
+    <ProjectReference Include="..\..\ControlCatalog\ControlCatalog.csproj" />
+  </ItemGroup>
+</Project>
